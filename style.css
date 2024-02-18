@@ -1,0 +1,2665 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#myTopnav {
+
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#myTopnav .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin: 0vw 12vw;
+
+}
+
+header {
+    background-color: white;
+}
+
+header menu a i {
+    display: none;
+    width: 1vw;
+    margin-right: 1vw;
+    font-size: 2vw;
+    text-align: center;
+    padding-right: 2vw;
+    padding-left: 0.1vw;
+    border-radius: 0.2vw;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19);
+}
+
+header .LOGO img {
+    width: 11vw;
+    margin-top: 0.1vw;
+    margin-right: 5vw;
+}
+
+header .navbar ul {
+    list-style: none;
+
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+header .navbar ul li {
+    text-decoration: none;
+    font-size: 0.9vw;
+    font-weight: 550;
+    padding: 0.8vw 0vw;
+    color: #2D3133;
+    display: block;
+
+}
+
+header .navbar ul li:hover {
+    background-color: #EEEEEE;
+}
+
+
+
+header .navbar ul li ul {
+    margin: 1vw 0vw;
+    padding: 1vw;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    display: none;
+}
+
+header .navbar ul li ul li a {
+    color: #000;
+}
+
+header .navbar ul li ul li {
+
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .navbar ul li:hover>ul {
+    display: block;
+}
+
+header .navbar ul li a {
+    opacity: 80%;
+    color: #000
+}
+
+
+header i {
+    font-size: 1.5vw;
+    padding: 0vw 1vw;
+    margin: 0vw;
+    text-decoration: none;
+    display: none;
+}
+
+.top {
+    background-color: #215585;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .content {
+    margin: 0vw 12vw;
+    padding: 0.5vw;
+}
+
+.top a {
+    color: white;
+    font-size: 0.9vw;
+    margin: 0.5vw;
+    text-decoration: none;
+}
+
+.top .right-content {
+    margin: 0vw 12vw;
+    padding: 0.5vw;
+}
+
+.top .right-content a {
+    font-size: 1vw;
+    opacity: 80%;
+}
+
+.top .right-content a i {
+    color: #2AFF6C;
+}
+
+.cover {
+    background-image: url(assets/try.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover h1 {
+    margin: 0vw 13vw;
+    padding-top: 9vw;
+    line-height: 3.5vw;
+    word-spacing: 0.2vw;
+    opacity: 1.1;
+    color: #f9f3f3;
+    font-size: 2.9vw;
+    font-family: sans-serif;
+    text-transform: initial;
+}
+
+.cover button {
+    margin-top: 2vw;
+    margin-bottom: 9vw;
+    padding: 0.8vw 0vw;
+    margin-left: 13vw;
+    width: 12vw;
+    background-color: #12cf67;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+}
+
+.cover button a {
+    font-size: 1.2vw;
+    font-weight: 650;
+    color: white;
+    text-align: center;
+}
+
+.cover button:hover {
+    background-color: #15a556;
+    color: white;
+    position: relative;
+}
+
+.cover button:after {
+    content: '&#xF2E5;';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.about {
+    display: flex;
+    margin: 0.1vw 13vw;
+    padding: 3vw 0vw;
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+    line-height: 1.8vw;
+}
+
+.right {
+    width: 40%;
+    height: 100%;
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+}
+
+.about h3 {
+    margin-bottom: 2vw;
+    font-size: 2.1vw;
+    font-weight: 650;
+}
+
+.about p {
+    font-size: 0.9vw;
+    font-weight: 500;
+    color: #747272;
+}
+
+.about i {
+    padding-right: 0.5vw;
+}
+
+.about a {
+    font-size: 1.1vw;
+    font-weight: 500;
+    text-decoration: none;
+    color: #18BA60;
+}
+
+.service {
+    margin: 0.1vw 13vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading h3 {
+    text-align: center;
+    padding-bottom: 2vw;
+    font-size: 2.1vw;
+    font-weight: 650;
+}
+
+.service img {
+    width: 100%;
+    height: 25vh;
+}
+
+.service .row1 {
+    height: 100%;
+    width: 25%;
+    padding: 0.9vw;
+    margin-bottom: 2vw;
+}
+
+.service h5 {
+    padding: 1vw 0vw;
+    font-size: 1.1vw;
+}
+
+.service p {
+    font-size: 0.9vw;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 80%;
+}
+
+.service a {
+    margin-top: 5vw;
+    font-size: 0.9vw;
+    text-decoration: none;
+    color: #18BA60;
+    font-weight: bold;
+}
+
+.service i {
+    font-size: 1.2vw;
+    padding-right: 0.6vw;
+    text-decoration: none;
+}
+
+.co-founder {
+    font-weight: 700;
+    opacity: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 13vw;
+    background-color: #E9EEEA;
+    border-radius: 5vw;
+}
+
+.co-left {
+    line-height: 1.5vw;
+    padding: 3vw;
+    text-align: center;
+}
+
+.co-left h3 {
+    padding-top: 1vw;
+}
+
+.co-left img {
+    border-radius: 50vw;
+    width: 20vw;
+}
+
+.co-right {
+    padding-right: 5vw;
+    padding-top: 6vw;
+}
+
+.co-right h2 {
+    font-style: italic;
+    font-size: 1vw;
+    margin: 1vw 0vw;
+
+}
+
+.co-right h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5vw;
+    font-size: 1vw;
+    text-align: right;
+    font-weight: 100;
+}
+
+.co-right p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.why-us {
+    margin: 0.1vw 13vw;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.why-us i {
+    font-size: 2.8vw;
+    color: orangered;
+    width: 100%;
+    height: 100%;
+}
+
+.why-us .Icon {
+    text-align: center;
+    padding: 2vw 2vw;
+    width: 33.3%;
+    height: 100%;
+}
+
+.why-us h3 {
+    text-align: center;
+    padding-bottom: 1vw;
+    font-size: 2.1vw;
+    font-weight: 650;
+}
+
+.why-us h5 {
+    margin-top: 1.5vw;
+    font-size: 1.3vw;
+}
+
+.work {
+    background-image: url(assets/sparkle2.jpg);
+    margin-bottom: 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work-content {
+    display: flex;
+    margin: 0.1vw 13vw;
+    padding: 2vw 0vw;
+}
+
+.work-left {
+    width: 50%;
+    height: 100%;
+    padding: 1vw;
+}
+
+.work-right {
+    width: 50%;
+    height: 100%;
+    padding: 2vw;
+}
+
+.work-left img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.work h3 {
+    margin-bottom: 2vw;
+    font-size: 2.1vw;
+    font-weight: 650;
+}
+
+.work p {
+    font-size: 1vw;
+    line-height: 2vw;
+    font-weight: 500;
+    color: #2E363A;
+}
+
+
+
+/* Whatsapp Floating Button  Start*/
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 60px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+/* Whatsapp Floating Button End*/
+
+/* About Page CSS Start*/
+
+.active {
+    background-color: #F7F6F6;
+    padding: 0.5vw;
+}
+
+.active span {
+    color: #18BA60;
+}
+
+.active p {
+    font-weight: 400;
+    font-size: 0.9vw;
+    margin: 0vw 13vw;
+    text-align: right;
+}
+
+.about-page {
+    margin: 2vw 13vw;
+    text-align: center;
+    line-height: 2vw;
+}
+
+.about-page h1 {
+    padding: 1vw;
+    font-size: 2vw;
+    font-weight: 650;
+    color: #2E363A;
+}
+
+.about-page p {
+    font-size: 1.01vw;
+    font-weight: 400;
+}
+
+.vision {
+    display: flex;
+    margin: 0vw 13vw;
+    line-height: 2vw;
+}
+
+.vision .left {
+    width: 50%;
+    height: 100%;
+}
+
+.vision .left img {
+    height: 100%;
+    width: 100%;
+}
+
+.vision .right {
+    padding: 3vw 0vw;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.vision h1 {
+    padding: 1vw;
+    font-size: 2vw;
+    font-weight: 650;
+    color: #2E363A;
+}
+
+.vision .right p {
+    font-size: 1.01vw;
+    font-weight: 400;
+}
+
+.aim {
+    display: flex;
+    margin: 0vw 13vw;
+    line-height: 2vw;
+}
+
+.aim .left {
+    width: 50%;
+    height: 100%;
+}
+
+.aim .right {
+    width: 50%;
+    height: 100%;
+}
+
+.aim .right img {
+    height: 100%;
+    width: 100%;
+}
+
+.aim .left {
+    padding: 3vw 0vw;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.aim h1 {
+    padding: 1vw;
+    font-size: 2vw;
+    font-weight: 650;
+    color: #2E363A;
+}
+
+.aim .left p {
+    font-size: 1.01vw;
+    font-weight: 400;
+}
+
+/* About Page CSS End */
+
+/* Contact Page CSS Start */
+.contact {
+    margin: 2vw 12vw;
+    padding: 1vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Address Style Start */
+.address {
+    background-color: #16C64C;
+    width: 30vw;
+    margin-right: 1vw;
+    color: white;
+    border-radius: 1.5vw;
+    padding: 2vw;
+}
+
+.address i {
+    padding-right: 1vw;
+    font-size: 1.5vw;
+}
+
+.address h6 i {
+    padding: 1vw;
+    font-size: 2vw;
+}
+
+.address h6 {
+    font-size: 1.2vw;
+    padding: 1.5vw 0vw;
+    font-weight: 550;
+}
+
+.address h1 {
+    padding: 1.5vw 0vw;
+    line-height: 0%;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.address h5 {
+    font-weight: 550;
+    font-size: 1.4vw;
+    color: #A9F9B3;
+    padding: 0.8vw;
+}
+
+.address p {
+    font-size: 1.2vw;
+    padding: 1vw 3vw;
+    padding-right: 0%;
+    line-height: 2vw;
+}
+
+/* Form Style Start */
+
+.form {
+    width: 50vw;
+    box-shadow: 0px 2px 4px 1px rgba(.2, .2, .2, .2);
+    background-color: #f5f6fd;
+    padding: 2vw;
+}
+
+.form label {
+    font-size: 1vw;
+    margin: 2vw 0vw;
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    font-size: 0.9vw;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #215585;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    border-radius: 30px;
+    width: 15vw;
+    height: 3vw;
+    font-size: 1vw;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-fluid {
+    background-color: #F3F3F3;
+}
+
+.types {
+    margin: 1vw 18vw;
+    padding: 1vw 0vw;
+}
+
+.types .types-items img {
+    width: 11vw;
+    text-align: center;
+    padding: 1.5vw;
+}
+
+.types-items h1 a {
+    font-size: 1.2vw;
+    text-align: center;
+    padding: 1.2vw 2vw;
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.visit h1 {
+    background-color: #F84436;
+    height: 3.5vw;
+}
+
+.map h1 {
+    background-color: #e2c550;
+    height: 3.5vw;
+}
+
+.whatsapp h1 {
+    background-color: #4CAF50;
+    height: 3.5vw;
+}
+
+/* Contact Page CSS End */
+/* Footer and Copyright Start */
+.container {
+    background-color: aliceblue;
+}
+
+.container .row {
+    margin: 0vw 12vw;
+    padding-top: 2vw;
+}
+
+.container .row ul {
+    list-style: none;
+}
+
+.container .row ul li {
+    display: inline-block;
+    width: 12vw;
+    font-size: 0.99vw;
+    font-weight: 700;
+    opacity: 80%;
+    padding: 0.3vw 0vw;
+
+}
+
+.container .row ul li ul li {
+    font-weight: 100;
+    line-height: 1.2vw;
+    font-size: 0.9vw;
+
+}
+
+.footer-nav {
+    margin: 0vw 12vw;
+    display: flex;
+    padding-bottom: 0.5vw;
+}
+
+.footer-nav .left {
+    width: 50%;
+}
+
+.footer-nav .left p {
+    font-size: 1vw;
+    opacity: 70%;
+}
+
+.footer-nav .left ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 0.5vw;
+    padding-top: 0.5vw;
+}
+
+.footer-nav .left img {
+    width: 2vw;
+    list-style: none;
+}
+
+.footer-nav .right {
+    width: 50%;
+    text-align: right;
+    padding-right: 6vw;
+}
+
+.footer-nav .right ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 0.90vw;
+    color: black;
+    padding: 0vw 0.5vw;
+    border-right: 1px solid orange;
+}
+
+.footer-nav .right p {
+    font-size: 0.9vw;
+    margin: 0.8vw 0vw;
+}
+
+.footer-nav .right ul li a {
+    color: #000;
+}
+
+.copyright {
+    background-color: #215585;
+    text-align: center;
+    padding: 1.5vw;
+}
+
+.copyright p {
+    color: white;
+    font-size: 0.8vw;
+    opacity: 95%;
+}
+
+.copyright .elements ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5vw;
+}
+
+.copyright .elements ul li a {
+    color: white;
+    opacity: 95%;
+    font-size: 0.8vw;
+}
+
+
+/* Footer and Copyright End */
+
+/* Media Query for 480 */
+@media (max-width:480px) {
+
+    /* Top Navbar Start */
+    .top .content {
+        margin: 1vw 6vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .top .content {
+        width: 150%;
+    }
+
+    .top .content a {
+        font-size: 3.5vw;
+        opacity: 90%;
+    }
+
+    .top .right-content {
+        width: 50%;
+    }
+
+    .top .right-content a {
+        font-size: 3vw;
+    }
+
+    /* Top Navbar End */
+    /* Header Navbar Start */
+    #myTopnav {
+
+        list-style-type: none;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+
+    #myTopnav .items {
+        margin: 0vw 6vw;
+    }
+
+
+    header .LOGO img {
+        width: 60%;
+        padding: 2vw 0vw;
+        margin-right: 40vw;
+    }
+
+    menu i {
+        display: block;
+        font-size: 5vw;
+        color: #000;
+    }
+
+    header menu a i {
+        display: block;
+        font-size: 5vw;
+        width: 1vw;
+        margin-right: 3vw;
+        padding-right: 5vw;
+        border-radius: 0.5vw;
+
+    }
+
+    header .navbar ul li {
+        display: none;
+    }
+
+    /* Header Navbar End */
+    /* cover section */
+    .cover h1 {
+        margin: 0vw 8vw;
+        font-size: 10vw;
+        line-height: 12vw;
+        padding-top: 20vw;
+    }
+
+    .cover {
+        height: 120vw;
+    }
+
+    .cover button {
+        width: 45vw;
+        margin: 6vw 8vw;
+        padding: 3vw 5vw;
+    }
+
+    .cover button a {
+        font-size: 5vw;
+        font-weight: 650;
+        color: white;
+        text-align: center;
+    }
+
+    /* about section */
+    .about {
+        margin: 5vw 8vw;
+        flex-wrap: wrap;
+    }
+
+    .about .left {
+        width: 100%;
+    }
+
+    .about .left p {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+    }
+
+    .about .left h3 {
+        font-size: 8vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+    }
+
+    .about .left a {
+        font-size: 3vw;
+    }
+
+    .about .right {
+        width: 100%;
+    }
+
+    .about .right img {
+        margin: 2vw 0vw;
+
+    }
+
+    /* About Section End */
+    /* Service Section */
+    .heading {
+        margin: 2vw 6vw;
+    }
+
+    .heading h3 {
+        font-size: 8vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+    }
+
+    .service {
+        margin: 2vw 6vw;
+    }
+
+    .service .row1 {
+        width: 100%;
+    }
+
+    .service .row1 h5 {
+        font-size: 5vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+    }
+
+    .service .row1 a {
+        font-size: 4vw;
+        line-height: 2;
+    }
+
+    .service .row1 i {
+        font-size: 4vw;
+    }
+
+    .service .row1 p {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+    }
+
+    /* Service Section End */
+    /* co-founder Section Start */
+    .co-founder {
+        margin: 2vw 6vw;
+        flex-wrap: wrap;
+    }
+
+    .co-founder .co-left {
+        width: 100%;
+    }
+
+    .co-founder .co-left h3 {
+        font-size: 6vw;
+        opacity: 80%;
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+    }
+
+    .co-founder .co-left H4 {
+        font-size: 4vw;
+        padding: 2vw;
+        opacity: 70%;
+        margin-bottom: 3vw;
+    }
+
+    .co-founder .co-left img {
+        width: 100%;
+    }
+
+    .co-founder .co-right {
+        width: 100%;
+        padding: 0vw 5vw;
+    }
+
+    .co-founder .co-right p {
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+
+    .co-founder .co-right h2 {
+        font-size: 4vw;
+        line-height: 8vw;
+        padding: 4vw 0vw;
+    }
+
+    .co-founder .co-right h4 {
+        font-size: 4vw;
+        font-weight: 500;
+        padding-bottom: 8vw;
+    }
+
+    /* co-founder Section End */
+    /* How Does Start */
+    .work .work-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2vw 6vw;
+    }
+
+    .work-left img {
+        width: 80vw;
+        padding: 4vw;
+    }
+
+    .work-right {
+        width: 100%;
+    }
+
+    .work-right h3 {
+        font-size: 8vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+    }
+
+    .work-right p {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+    }
+
+    /* How Does Section End */
+    /* Why us Start */
+    .heading h3 {
+        font-size: 8vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+    }
+
+    .why-us {
+        margin: 2vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .why-us .Icon {
+        width: 50%;
+    }
+
+    .why-us .Icon i {
+        font-size: 12vw;
+        opacity: 80%;
+    }
+
+    .why-us .Icon h5 {
+        font-size: 4vw;
+        line-height: 8vw;
+        padding: 4vw 0vw;
+    }
+
+    /* Why us End */
+    /* Footer Section Start */
+    .container .row {
+        margin: 1vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .row ul li {
+        font-size: 5vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+        width: 100%;
+    }
+
+    .container .row ul li ul li {
+        font-size: 4vw;
+        color: black;
+        opacity: 60%;
+        font-weight: 500;
+    }
+
+    .footer-nav {
+        margin: 1vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav .left {
+        width: 100%;
+    }
+
+    .footer-nav .left p {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+
+    }
+
+    .footer-nav .left img {
+        width: 10vw;
+        padding-right: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .footer-nav .right {
+        width: 100%;
+        padding: 2vw 0vw;
+        text-align: left;
+    }
+
+    .footer-nav .right ul li a {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        padding-right: 1vw;
+
+    }
+
+    .footer-nav .right p {
+        font-weight: 400;
+        font-size: 3.9vw;
+        padding: 2vw 0vw;
+        margin-bottom: 6vw;
+        line-height: 7vw;
+    }
+
+    /* Footer Section End */
+    /* CopyRight Section Start */
+    .copyright .elements {
+        margin: 1vw 6vw;
+        padding: 1vw;
+    }
+
+    .copyright .elements p {
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        opacity: 80%;
+    }
+
+    .copyright .elements ul li a {
+        font-weight: 400;
+        opacity: 80%;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        padding-right: 1vw;
+    }
+
+    /* CopyRight Section End */
+    /* Whatsapp Floating Button Start */
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 50px;
+        right: 50px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+
+    /* Whatsapp Floating Button End */
+    /* About Page */
+    .active p {
+        font-size: 4vw;
+        padding: 4vw 0vw;
+    }
+
+    .about-page {
+        margin: 0vw 6vw;
+    }
+
+    .about-page h1 {
+        font-size: 8vw;
+        opacity: 90%;
+        padding-top: 3vw;
+        margin: 5vw 0vw;
+    }
+
+    .about-page p {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+
+    }
+
+    .vision {
+        margin: 0vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vision .left {
+        width: 100%;
+    }
+
+    .vision .right {
+        width: 100%;
+    }
+
+    .vision .right h1 {
+        font-size: 8vw;
+        opacity: 90%;
+        padding-top: 3vw;
+        margin: 5vw 0vw;
+    }
+
+    .vision .right p {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+
+    }
+
+    .aim {
+        margin: 0vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aim .right {
+        width: 100%;
+    }
+
+    .aim .left {
+        width: 100%;
+    }
+
+    .aim .left h1 {
+        font-size: 8vw;
+        opacity: 90%;
+        padding-top: 3vw;
+        margin: 5vw 0vw;
+    }
+
+    .aim .left p {
+        font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+
+    }
+
+    /* Contact Page */
+
+    .contact {
+        margin: 0vw 6vw;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2vw 0vw;
+    }
+
+    .address {
+        border-radius: 5vw;
+        width: 100%;
+        padding: 5vw;
+    }
+
+    .address h6 i {
+        font-size: 8vw;
+    }
+
+    .address h6 {
+        margin: 2vw 0vw;
+        font-size: 5.5vw;
+        opacity: 90%;
+    }
+
+    .address h1 {
+        font-size: 8vw;
+        opacity: 90%;
+        padding-top: 3vw;
+        margin: 5vw 0vw;
+    }
+
+    .address h5 {
+        font-size: 6vw;
+        line-height: 8vw;
+        padding: 4vw 0vw;
+    }
+
+    .address h5 i {
+        font-size: 7vw;
+        padding-right: 3vw;
+    }
+
+    .address p {
+        padding-left: 8vw;
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+
+    .form {
+        width: 100%;
+        margin: 5vw 0vw;
+        padding: 5vw;
+    }
+
+    .form label {
+        font-size: 3.5vw;
+    }
+
+    /* Style inputs */
+    input[type=text],
+    select,
+    textarea {
+        font-size: 4vw;
+
+    }
+
+    input[type=submit] {
+
+        cursor: pointer;
+        border-radius: 30px;
+        width: 40vw;
+        height: 10vw;
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    .types {
+        margin: 0vw 6vw;
+    }
+
+    .types-items {
+        cursor: pointer;
+        padding: 0vw 3vw;
+    }
+
+    .types-items .visit img {
+        width: 15vw;
+        margin-left: 5vw;
+    }
+
+    .types-items .map img {
+        width: 15vw;
+        margin-left: 5vw;
+    }
+
+    .types-items .whatsapp img {
+        width: 15vw;
+        margin-left: 5vw;
+    }
+
+    .types-items h1 {
+        display: none;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .top .content {
+        margin: 1vw 8vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .top .content {
+        width: 100%;
+    }
+
+    .top .content a {
+        font-size: 2.5vw;
+        opacity: 90%;
+    }
+
+    .top .right-content {
+        width: 40%;
+    }
+
+    .top .right-content a {
+        font-size: 2.5vw;
+    }
+
+    /* Top Navbar End */
+    /* Header Navbar Start */
+    #myTopnav {
+
+        list-style-type: none;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+
+    #myTopnav .items {
+        margin: 1vw 8vw;
+    }
+
+
+    header .LOGO img {
+        width: 40%;
+        padding: 2vw 0vw;
+        margin-right: 40vw;
+    }
+
+    menu i {
+        display: block;
+        font-size: 4vw;
+        color: #000;
+    }
+
+    header menu a i {
+        display: block;
+        font-size: 5vw;
+        width: 1vw;
+        margin-right: 3vw;
+        padding-right: 5vw;
+        border-radius: 0.5vw;
+
+    }
+
+    header .navbar ul li {
+        display: none;
+    }
+
+    /* Header Navbar End */
+    /* cover section */
+    .cover h1 {
+        margin: 1vw 8vw;
+        font-size: 6vw;
+        line-height: 8vw;
+        padding-top: 20vw;
+    }
+
+    .cover {
+        height: 80vw;
+    }
+
+    .cover button {
+        width: 35vw;
+        margin: 6vw 8vw;
+        padding: 2.5vw 2vw;
+    }
+
+    .cover button a {
+        font-size: 3vw;
+        font-weight: 650;
+        color: white;
+        text-align: center;
+    }
+
+    /* about section */
+    .about {
+        margin: 5vw 8vw;
+        flex-wrap: wrap;
+    }
+
+
+    .about .left {
+        width: 100%;
+    }
+
+    .about .left p {
+        font-weight: 400;
+        font-size: 2.5vw;
+        padding: 2vw 0vw;
+        line-height: 5vw;
+    }
+
+    .about .left h3 {
+        font-size: 5vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+    }
+
+    .about .left a {
+        margin: 2vw 0vw;
+        font-size: 3vw;
+    }
+
+    .about .right {
+        width: 100%;
+    }
+
+    .about .right img {
+        margin: 2vw 0vw;
+
+    }
+
+    /* About Section End */
+    /* Service Section */
+    .heading {
+        margin: 2vw 6vw;
+    }
+
+    .heading h3 {
+        font-size: 5vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+    }
+
+    .service {
+        margin: 2vw 6vw;
+    }
+
+    .service .row1 {
+        width: 100%;
+    }
+
+    .service .row1 h5 {
+        font-size: 3vw;
+        padding: 2vw 5vw;
+        line-height: 5vw;
+    }
+
+    .service .row1 p {
+
+        font-weight: 400;
+        font-size: 2.5vw;
+        padding: 2vw 5vw;
+        line-height: 5vw;
+    }
+
+    .service .row1 a {
+        padding: 5vw;
+        font-size: 2.5vw;
+    }
+
+    .service .row1 a i {
+        font-size: 3vw;
+    }
+
+    .service .row1 img {
+        width: 100%;
+        height: 100%;
+        padding: 5vw;
+    }
+
+    /* Service Section End */
+    /* co-founder Section Start */
+    .co-founder {
+        margin: 1vw 8vw;
+        flex-wrap: wrap;
+    }
+
+    .co-founder .co-left {
+        width: 100%;
+    }
+
+    .co-founder .co-left h3 {
+        font-size: 4vw;
+        opacity: 80%;
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+    }
+
+    .co-founder .co-left H4 {
+        font-size: 3vw;
+        padding: 2vw;
+        opacity: 70%;
+        margin-bottom: 1vw;
+    }
+
+    .co-founder .co-left img {
+        width: 50%;
+    }
+
+    .co-founder .co-right {
+        width: 100%;
+        padding: 0vw 5vw;
+    }
+
+    .co-founder .co-right p {
+        font-weight: 400;
+        font-size: 2.5vw;
+        line-height: 5vw;
+    }
+
+    .co-founder .co-right h2 {
+        font-size: 2.5vw;
+        line-height: 8vw;
+        padding: 4vw 0vw;
+    }
+
+    .co-founder .co-right h4 {
+        font-size: 2.5vw;
+        font-weight: 500;
+        padding-bottom: 5vw;
+    }
+
+    /* co-founder Section End */
+    /* How Does Start */
+    .work .work-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2vw 6vw;
+    }
+
+    .work-left img {
+        width: 80vw;
+        padding: 4vw;
+    }
+
+    .work-right {
+        width: 100%;
+    }
+
+    .work-right h3 {
+        font-size: 5vw;
+        line-height: 7vw;
+        opacity: 80%;
+        margin: 3vw 0vw;
+    }
+
+    .work-right p {
+        font-weight: 400;
+        font-size: 2.5vw;
+        padding: 2vw 0vw;
+        line-height: 5vw;
+    }
+
+    /* How Does Section End */
+    /* Why us Start */
+    .heading h3 {
+        font-size: 5vw;
+        opacity: 80%;
+        margin: 5vw 0vw;
+    }
+
+    .why-us {
+        margin: 2vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .why-us .Icon {
+        width: 50%;
+    }
+
+    .why-us .Icon i {
+        font-size: 8vw;
+        opacity: 80%;
+    }
+
+    .why-us .Icon h5 {
+        font-size: 3vw;
+        line-height: 8vw;
+        padding: 4vw 0vw;
+    }
+
+    /* Why us End */
+    /* Footer Section Start */
+    .container .row {
+        margin: 1vw 8vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .row ul li {
+        font-size: 3.5vw;
+        opacity: 80%;
+        margin: 3vw 0vw;
+        width: 100%;
+    }
+
+    .container .row ul li ul li {
+        font-size: 3vw;
+        color: black;
+        opacity: 60%;
+        font-weight: 500;
+    }
+
+    .footer-nav {
+        margin: 1vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav .left {
+        width: 100%;
+    }
+
+    .footer-nav .left p {
+        font-weight: 400;
+        font-size: 3vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+
+    }
+
+    .footer-nav .left img {
+        width: 8vw;
+        padding-right: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .footer-nav .right {
+        width: 100%;
+        padding: 2vw 0vw;
+        text-align: left;
+    }
+
+    .footer-nav .right ul li a {
+        font-weight: 400;
+        font-size: 3vw;
+        padding: 2vw 0vw;
+        padding-right: 1vw;
+
+    }
+
+    .footer-nav .right p {
+        font-weight: 400;
+        font-size: 3vw;
+        padding: 2vw 0vw;
+        line-height: 7vw;
+    }
+
+    /* Footer Section End */
+    /* CopyRight Section Start */
+    .copyright .elements {
+        margin: 1vw 6vw;
+        padding: 1vw;
+    }
+
+    .copyright .elements p {
+        font-size: 2.5vw;
+        padding: 2vw 0vw;
+        opacity: 80%;
+    }
+
+    .copyright .elements ul li a {
+        font-weight: 400;
+        opacity: 80%;
+        font-size: 2vw;
+        padding: 2vw 0vw;
+        padding-right: 1vw;
+    }
+
+    /* CopyRight Section End */
+    /* Whatsapp Floating Button Start */
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 50px;
+        right: 50px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+
+    /* Whatsapp Floating Button End */
+    /* About Page */
+    .active p {
+        margin: 1vw 8vw;
+        font-size: 2.5vw;
+        padding: 4vw 0vw;
+        margin-right: 8vw;
+    }
+
+    .about-page {
+        margin: 1vw 6vw;
+    }
+
+    .about-page h1 {
+        font-size: 5vw;
+        opacity: 80%;
+        padding-top: 3vw;
+        margin: 2vw 0vw;
+    }
+
+    .about-page p {
+        font-weight: 400;
+        font-size: 2.5vw;
+        padding: 2vw 0vw;
+        line-height: 5vw;
+
+    }
+
+    .vision {
+        margin: 0vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vision .left {
+        width: 100%;
+    }
+
+    .vision .right {
+        width: 100%;
+    }
+
+    .vision .right h1 {
+        font-size: 5vw;
+        opacity: 80%;
+        padding-top: 3vw;
+        margin: 2vw 0vw;
+    }
+
+    .vision .right p {
+        font-weight: 400;
+        font-size: 2.5vw;
+        padding: 2vw 0vw;
+        line-height: 5vw;
+
+    }
+
+    .aim {
+        margin: 0vw 6vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aim .right {
+        width: 100%;
+    }
+
+    .aim .left {
+        width: 100%;
+    }
+
+    .aim .left h1 {
+        font-size: 5vw;
+        opacity: 80%;
+        padding-top: 3vw;
+        margin: 2vw 0vw;
+    }
+
+    .aim .left p {
+        font-weight: 400;
+        font-size: 2.5vw;
+        padding: 2vw 0vw;
+        line-height: 5vw;
+
+    }
+
+    /* Contact Page */
+
+    .contact {
+        margin: 1vw 6vw;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2vw 0vw;
+    }
+
+    .address {
+        border-radius: 5vw;
+        width: 100%;
+        padding: 5vw;
+    }
+
+    .address h6 i {
+        font-size: 8vw;
+    }
+
+    .address h6 {
+        font-size: 3vw;
+        opacity: 90%;
+    }
+
+    .address h1 {
+        font-size: 5vw;
+        opacity: 90%;
+        padding-top: 3vw;
+        margin: 2vw 0vw;
+    }
+
+    .address h5 {
+        font-size: 4vw;
+        line-height: 8vw;
+        padding: 2vw 0vw;
+    }
+
+    .address h5 i {
+        font-size: 5vw;
+        padding-right: 3vw;
+    }
+
+    .address p {
+        padding-left: 8vw;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    .form {
+        width: 100%;
+        margin: 5vw 0vw;
+        padding: 5vw;
+    }
+
+    .form label {
+        font-size: 3vw;
+    }
+
+    /* Style inputs */
+    input[type=text],
+    select,
+    textarea {
+        font-size: 2.5vw;
+
+    }
+
+    input[type=submit] {
+
+        cursor: pointer;
+        border-radius: 40px;
+        width: 30vw;
+        height: 8vw;
+        font-size: 3vw;
+        padding: 2vw;
+    }
+
+    .types {
+        margin: 0vw 6vw;
+    }
+
+    .types-items {
+        cursor: pointer;
+        padding: 0vw 3vw;
+    }
+
+    .types-items .visit img {
+        width: 15vw;
+        margin-left: 5vw;
+    }
+
+    .types-items .map img {
+        width: 15vw;
+        margin-left: 5vw;
+    }
+
+    .types-items .whatsapp img {
+        width: 15vw;
+        margin-left: 5vw;
+    }
+
+    .types-items h1 {
+        display: none;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .top .content {
+        margin: 1vw 3vw;
+
+    }
+
+    .top .content a {
+        font-size: 1.5vw;
+        opacity: 90%;
+    }
+
+    .top .right-content a {
+        font-size: 1.5vw;
+        float: right;
+    }
+
+    /* Top Navbar End */
+    /* Header Navbar Start */
+    #myTopnav {
+
+        list-style-type: none;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+
+    #myTopnav .items {
+        margin: 0vw 3vw;
+    }
+
+
+    header .LOGO img {
+        width: 50%;
+        margin-right: 0%;
+    }
+
+    header menu a i {
+        display: none;
+        font-size: 3vw;
+        width: 1vw;
+        border: none;
+        box-shadow: none;
+        float: right;
+        margin-left: 30vw;
+
+    }
+
+    header .navbar {
+        margin: 0vw 3vw;
+    }
+
+    header .navbar ul li {
+        display: none;
+    }
+
+    /* Header Navbar End */
+    /* cover section */
+    .cover h1 {
+        margin: 0vw 3vw;
+        opacity: 95%;
+        font-size: 4.5vw;
+        line-height: 6vw;
+        padding-top: 13vw;
+    }
+
+    .cover {
+        height: 50vw;
+    }
+
+    .cover button {
+        width: 18vw;
+        margin: 3vw;
+        padding: 2vw 0vw;
+    }
+
+    .cover button a {
+        font-size: 2vw;
+        font-weight: 650;
+        color: white;
+        text-align: center;
+    }
+
+    /* about section */
+    .about {
+        margin: 0vw 3vw;
+        flex-wrap: wrap;
+    }
+
+
+    .about .left {
+        width: 100%;
+    }
+
+    .about .left p {
+        font-weight: 400;
+        font-size: 2vw;
+        padding: 2vw 0vw;
+        line-height: 3.5vw;
+    }
+
+    .about .left h3 {
+        font-size: 3vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .about .left a {
+        font-size: 2vw;
+    }
+
+    .about .right {
+        width: 100%;
+    }
+
+    .about .right img {
+        padding: 3vw;
+        margin: 2vw 3vw;
+
+    }
+
+    /* About Section End */
+    /* Service Section */
+   .service {
+    margin: 0.1vw 3vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heading h3 {
+    font-size: 2.5vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+}
+
+.service img {
+    width: 100%;
+    height: 25vh;
+}
+
+.service .row1 {
+    height: 100%;
+    width: 25%;
+    padding: 0.9vw;
+    margin-bottom: 2vw;
+}
+
+.service h5 {
+    padding: 1.5vw 0vw;
+    font-size: 1.8vw;
+}
+
+.service p {
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 80%;
+}
+
+.service a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #18BA60;
+    font-weight: bold;
+}
+
+.service i {
+    font-size: 2vw;
+    padding-right: 0.6vw;
+    text-decoration: none;
+}
+    /* Service Section End */
+    /* co-founder Section Start */
+    .co-founder {
+        margin: 2vw 3vw;
+        flex-wrap: wrap;
+    }
+
+    .co-founder .co-left {
+        width: 100%;
+    }
+
+    .co-founder .co-left h3 {
+        font-size: 3vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    .co-founder .co-left H4 {
+        font-size: 2vw;
+        padding-top: 1vw;
+        line-height: 3.5vw;
+        opacity: 60%;
+        font-weight: 400;
+        margin-bottom: 1vw;
+    }
+
+    .co-founder .co-left img {
+        margin-top: 2vw;
+        width: 30%;
+    }
+
+    .co-founder .co-right {
+        width: 100%;
+        padding: 0vw 5vw;
+    }
+
+    .co-founder .co-right p {
+        font-weight: 400;
+        font-size: 2vw;
+        padding: 1vw 0vw;
+        line-height: 3.5vw;
+    }
+
+    .co-founder .co-right h2 {
+        font-weight: 600;
+        font-size: 2vw;
+        padding: 2vw 0vw;
+        line-height: 3.5vw;
+    }
+
+    .co-founder .co-right h4 {
+        font-size: 2vw;
+        font-weight: 500;
+        padding-bottom: 5vw;
+    }
+
+    /* co-founder Section End */
+    /* How Does Start */
+    .work .work-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0vw 3vw;
+    }
+
+    .work-left img {
+        width: 100%;
+    }
+
+    .work-right {
+        width: 100%;
+    }
+
+    .work-right h3 {
+        font-size: 3vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .work-right p {
+        font-weight: 400;
+        font-size: 2vw;
+        padding: 2vw 0vw;
+        line-height: 3.5vw;
+    }
+
+    /* How Does Section End */
+    /* Why us Start */
+    .heading h3 {
+        font-size: 3vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .why-us {
+        margin: 0vw 3vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .why-us .Icon {
+        width: 20%;
+    }
+
+    .why-us .Icon i {
+        font-size: 5vw;
+        opacity: 80%;
+    }
+
+    .why-us .Icon h5 {
+        font-size: 2vw;
+        padding: 2vw 0vw;
+    }
+
+    /* Why us End */
+    /* Footer Section Start */
+
+    .container .row {
+        margin: 0vw 3vw;
+        padding-top: 5vw;
+    }
+
+    .container .row ul li {
+        display: inline-block;
+        width: 15vw;
+        font-size: 1.3vw;
+        font-weight: 700;
+        opacity: 80%;
+
+    }
+
+    .container .row ul li ul li {
+        font-weight: 100;
+        line-height: 2vw;
+        font-size: 1.2vw;
+        margin-top: 1vw;
+
+    }
+
+    .footer-nav {
+        margin: 0vw 3vw;
+        display: flex;
+        padding: 5vw 0vw;
+    }
+
+    .footer-nav .left {
+        width: 30%;
+    }
+
+    .footer-nav .left p {
+        font-size: 2vw;
+        opacity: 70%;
+    }
+
+    .footer-nav .left ul li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 0.5vw;
+        padding-top: 0.5vw;
+    }
+
+    .footer-nav .left img {
+        width: 3vw;
+        padding: 2vw 0vw;
+        list-style: none;
+    }
+
+    .footer-nav .right {
+        width: 70%;
+        text-align: right;
+        padding-right: 0vw;
+    }
+
+    .footer-nav .right ul li {
+        display: inline-block;
+        list-style: none;
+        font-size: 1.6vw;
+        color: black;
+        padding-right: 1vw;
+        margin: 2vw 0vw;
+        border-right: 2px solid orange;
+    }
+
+    .footer-nav .right p {
+        font-size: 1.5vw;
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 2vw;
+    }
+
+    .copyright p {
+        color: white;
+        font-size: 1.5vw;
+        opacity: 80%;
+    }
+
+    .copyright .elements ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0.5vw;
+    }
+
+    .copyright .elements ul li a {
+        color: white;
+        opacity: 80%;
+        font-size: 1.5vw;
+    }
+
+    /* CopyRight Section End */
+    /* Whatsapp Floating Button Start */
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 50px;
+        right: 50px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+
+    /* Whatsapp Floating Button End */
+    /* About Page */
+    .active p {
+        font-weight: 400;
+        font-size: 2vw;
+        padding: 2vw 0vw;
+        line-height: 3.5vw;
+    }
+
+    .about-page {
+        margin: 1vw 6vw;
+    }
+
+    .about-page h1 {
+        font-size: 3vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .about-page p {
+        font-weight: 400;
+        font-size: 2vw;
+        padding: 2vw 0vw;
+        line-height: 3.5vw;
+
+    }
+
+    .vision {
+        margin: 0vw 6vw;
+        display: flex;
+    }
+
+    .vision .left {
+        margin-top: 8vw;
+        width: 100%;
+    }
+
+    .vision .right {
+        width: 100%;
+    }
+
+    .vision .right h1 {
+        font-size: 3vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .vision .right p {
+        font-weight: 400;
+        font-size: 2vw;
+        padding: 2vw 0vw;
+        line-height: 3.5vw;
+        text-align: left;
+
+    }
+
+    .aim {
+        margin: 0vw 6vw;
+        display: flex;
+    }
+
+    .aim .right {
+        width: 100%;
+    }
+
+    .aim .left {
+        width: 100%;
+    }
+
+    .aim .right img {
+        margin-top: 8vw;
+    }
+
+    .aim .left h1 {
+        font-size: 3vw;
+        opacity: 80%;
+        margin-bottom: 2vw;
+    }
+
+    .aim .left p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 2vw;
+        padding: 0vw 2.5vw;
+        line-height: 3.5vw;
+
+    }
+
+    /* Contact Page */
+    .contact {
+        margin: 2vw 3vw;
+        padding: 1vw;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Address Style Start */
+    .address {
+        background-color: #16C64C;
+        width: 40vw;
+        margin-right: 1vw;
+        color: white;
+        border-radius: 1.5vw;
+        padding: 3vw;
+    }
+
+    .address i {
+        padding-right: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .address h6 i {
+        padding: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .address h6 {
+        font-size: 1.5vw;
+        padding: 1.5vw 0vw;
+        font-weight: 550;
+    }
+
+    .address h1 {
+        padding: 1.5vw 0vw;
+        line-height: 0%;
+        font-size: 3vw;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .address h5 {
+        font-weight: 550;
+        font-size: 1.8vw;
+        line-height: 5vw;
+        color: #A9F9B3;
+        padding: 0.8vw;
+    }
+
+    .address p {
+        font-size: 2vw;
+        padding: 1vw 3vw;
+        padding-right: 0%;
+        line-height: 3vw;
+    }
+
+    /* Form Style Start */
+
+    .form {
+        width: 50vw;
+        box-shadow: 0px 2px 4px 1px rgba(.2, .2, .2, .2);
+        background-color: #f5f6fd;
+        padding: 3vw;
+    }
+
+    .form label {
+        font-size: 1.5vw;
+    }
+
+    /* Style inputs */
+    input[type=text],
+    select,
+    textarea {
+        font-size: 1.5vw;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        background-color: #215585;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: block;
+        border-radius: 30px;
+        width: 20vw;
+        height: 5vw;
+        font-size: 1.8vw;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container-fluid {
+        background-color: #F3F3F3;
+    }
+
+    .types {
+        margin: 1vw 10vw;
+        padding: 5vw 0vw;
+    }
+
+    .types .types-items img {
+        width: 15vw;
+    }
+
+    .types-items h1 a {
+        font-size: 1.5vw;
+        text-align: center;
+        padding: 1.5vw 4vw;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .visit h1 a {
+        background-color: #F84436;
+        height: 4vw;
+    }
+
+    .map h1 a {
+        background-color: #e2c550;
+        height: 4vw;
+    }
+
+    .whatsapp h1 a {
+        background-color: #4CAF50;
+        height: 4vw;
+    }
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {}

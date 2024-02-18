@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./javascript.js">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Priyanka</title>
+</head>
+<style>
+    .otherFiling {
+        margin: 1vw 12vw;
+    }
+
+    .otherFiling h3 {
+        text-align: center;
+        font-size: 1.6vw;
+    }
+
+    .otherFiling p {
+        text-align: center;
+        padding: 1vw 0vw;
+        line-height: 1.8vw;
+    }
+
+    .rightotherservice {
+        padding: 2vw;
+        width: 100%;
+        box-shadow: 0 0 10px 0.5px #999;
+    }
+
+    .rightotherservice h4 {
+        margin: 1vw 0vw;
+        font-size: 1.3vw;
+        opacity: 90%;
+    }
+
+    .rightotherservice h5 {
+        margin: 1vw 0vw;
+        font-size: 1vw;
+        font-weight: 300;
+        opacity: 90%;
+    }
+
+    .rightotherservice label {
+        font-size: 0.85vw;
+        font-weight: 550;
+        opacity: 80%;
+    }
+
+    .otherserviceBenifits h2 {
+        font-size: 1.6vw;
+        margin: 2vw 0vw;
+    }
+
+    .otherserviceBenifits h3 {
+        font-size: 1.3vw;
+        text-align: left;
+        background-color: #215585;
+        padding: 1vw;
+        color: #fff;
+    }
+
+    .otherserviceBenifits p {
+        font-size: 1vw;
+        line-height: 1.8vw;
+        text-align: left;
+        padding: 1vw;
+    }
+
+    .otherSymbols {
+        display: flex;
+        justify-content: center;
+    }
+
+    .otherSymbols img {
+        width: 100%;
+        margin: 0vw 2vw;
+        padding: 2vw 4vw;
+    }
+
+    @media (max-width:480px) {
+        .otherFiling {
+            margin: 1vw 6vw;
+        }
+
+        .otherFiling h3 {
+            font-size: 8vw;
+            opacity: 80%;
+            margin: 5vw 0vw;
+            line-height: 10vw;
+        }
+
+        .otherFiling p {
+            font-weight: 400;
+            font-size: 4vw;
+            padding: 2vw 0vw;
+            line-height: 7vw;
+        }
+
+        .rightotherservice {
+            padding: 5vw;
+            width: 100%;
+            box-shadow: 0 0 10px 0.5px #999;
+        }
+
+        .rightotherservice h4 {
+            font-size: 5vw;
+            line-height: 8vw;
+            padding-top: 4vw;
+        }
+
+        .rightotherservice h5 {
+            font-size: 4vw;
+            line-height: 8vw;
+            margin-bottom: 5vw;
+            font-weight: 400;
+        }
+
+        .rightotherservice label {
+            font-size: 4vw;
+            font-weight: 550;
+            opacity: 80%;
+        }
+
+        .otherserviceBenifits h2 {
+            font-size: 7vw;
+            opacity: 80%;
+            margin: 5vw 0vw;
+            line-height: 10vw;
+
+        }
+
+        .otherserviceBenifits h3 {
+            font-size: 6vw;
+            padding: 5vw;
+            opacity: 80%;
+            margin: 5vw 0vw;
+            line-height: 10vw;
+
+            background-color: #215585;
+            color: #fff;
+        }
+
+        .otherserviceBenifits p {
+            font-weight: 400;
+            font-size: 4vw;
+            opacity: 70%;
+            padding: 2vw 0vw;
+            line-height: 7vw;
+        }
+
+        .otherSymbols {
+            display: flex;
+            justify-content: center;
+        }
+
+        .otherSymbols img {
+            width: 100%;
+            margin: 5vw 2vw;
+            padding: 2vw 4vw;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 767px){
+        .otherFiling {
+            margin: 1vw 8vw;
+        }
+
+        .otherFiling h3 {
+            font-size: 4vw;
+            opacity: 80%;
+            margin: 3vw 0vw;
+            line-height: 5vw;
+        }
+
+        .otherFiling p {
+            font-weight: 400;
+            font-size: 2.5vw;
+            line-height: 5vw;
+        }
+
+        .rightotherservice {
+            padding: 5vw;
+            width: 100%;
+            box-shadow: 0 0 10px 0.5px #999;
+        }
+
+        .rightotherservice h4 {
+            font-size: 3.5vw;
+            opacity: 80%;
+            line-height: 5vw;
+            padding-top: 4vw;
+        }
+
+        .rightotherservice h5 {
+            font-size: 3vw;
+            line-height: 5vw;
+            margin-bottom: 5vw;
+            font-weight: 400;
+        }
+
+        .rightotherservice label {
+            font-size: 3vw;
+            font-weight: 550;
+            opacity: 80%;
+        }
+
+        .otherserviceBenifits h2 {
+            font-size: 4vw;
+            opacity: 80%;
+            margin: 3vw 0vw;
+            line-height: 7vw;
+
+        }
+
+        .otherserviceBenifits h3 {
+            font-size: 3.5vw;
+            padding: 3vw;
+            opacity: 80%;
+            margin: 3vw 0vw;
+            line-height: 5vw;background-color: #215585;
+            color: #fff;
+        }
+
+        .otherserviceBenifits p {
+            font-weight: 400;
+            font-size: 2.5vw;
+            opacity: 70%;
+            line-height: 5vw;
+        }
+
+        .otherSymbols {
+            display: flex;
+            justify-content: center;
+        }
+
+        .otherSymbols img {
+            width: 100%;
+            margin: 3vw 2vw;
+            padding: 2vw 4vw;
+        }   
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        .otherFiling {
+        margin: 1vw 3vw;
+    }
+
+    .otherFiling h3 {
+        text-align: center;
+        font-size: 2.5vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .otherFiling p {
+        text-align: center;
+        padding: 1vw 0vw;
+        font-size: 1.7vw;
+        line-height: 2.5vw;
+    }
+
+    .rightotherservice {
+        padding: 2vw;
+        width: 100%;
+        box-shadow: 0 0 10px 0.5px #999;
+    }
+
+    .rightotherservice h4 {
+        margin: 1vw 0vw;
+        font-size: 1.8vw;
+        opacity: 90%;
+    }
+
+    .rightotherservice h5 {
+        margin-bottom: 3vw;
+        font-size: 1.5vw;
+        font-weight: 300;
+        opacity: 90%;
+    }
+
+    .rightotherservice label {
+        font-size: 1.5vw;
+        font-weight: 550;
+        opacity: 80%;
+    }
+
+    .otherserviceBenifits h2 {
+        font-size: 2vw;
+        margin: 3vw 0vw;
+    }
+
+    .otherserviceBenifits h3 {
+        font-size: 1.5vw;
+        text-align: left;
+        background-color: #215585;
+        padding: 1vw;
+        color: #fff;
+    }
+
+    .otherserviceBenifits p {
+        font-size: 1.7vw;
+        line-height: 2.5vw;
+        text-align: left;
+        padding: 1vw;
+    }
+
+    .otherSymbols {
+        display: flex;
+        justify-content: center;
+    }
+
+    .otherSymbols img {
+        width: 100%;
+        margin: 0vw 2vw;
+        padding: 2vw 4vw;
+    }
+    }
+</style>
+
+<body>
+    <div class="top">
+        <div class="content">
+            <a href="tel:9049397530"><i class="fa fa-fw fa-phone fa-flip-horizontal"></i>+91 9049397530</a>
+            <a href="mailto:corpdhara@gmail.com"><i class="fa fa-fw fa-envelope"></i>
+                corpdhara@gmail.com</a>
+        </div>
+        <div class="right-content">
+            <a href="Contact.html">Join Our Team? <i class="ri-chat-smile-2-fill"></i></a>
+        </div>
+    </div>
+    <header id="myTopnav">
+        <div class=" items">
+            <a href="index.html" class="LOGO"> <img src="assets/CorpDhara.png" alt=""></a>
+            <menu><a href="#all"><i class="ri-more-2-fill" onclick="myFunction()"></i></a></menu>
+            <nav class="navbar">
+
+                <ul>
+
+                    <li>Company Registration <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li> <a href="#">Business Registration</a></li>
+                            <li><a href="#">Private Limited Company</a></li>
+                            <li><a href="#">Limited Liability Partnership</a></li>
+                            <li><a href="#">One Person Company</a></li>
+                            <li><a href="#">Nidhi Company</a></li>
+                            <li><a href="#">Public limited Company</a></li>
+                            <li><a href="#">Section 8 Company</a></li>
+                        </ul>
+                    </li>
+                    <li>Licenses <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">FSSAI [Food License]</a></li>
+                            <li><a href="#">FSSAI Renewal</a></li>
+                            <li><a href="#">IEC [Import/Export Code]</a></li>
+                            <li><a href="#">IEC Certificate Modification</a></li>
+                            <li><a href="#">Digital Signature Certificate</a></li>
+                        </ul>
+
+                    </li>
+                    <li>Trademark & IPR <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">TM Registration</a></li>
+                            <li><a href="#">TM Objection</a></li>
+                            <li><a href="#">TM Renewal</a></li>
+                            <li><a href="#">Copyright Registration</a></li>
+                        </ul>
+                    </li>
+                    <li>Tax & Complainces <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">Online Accountant</a></li>
+                            <li><a href="#">GST Modification</a></li>
+                            <li><a href="#">GST Cancellation</a></li>
+                            <li><a href="#">PF Registration</a></li>
+                            <li><a href="#">PF Return</a></li>
+                            <li><a href="#">Online Bookkeeping</a></li>
+                            <li><a href="#">Income Tax Return</a></li>
+                            <li><a href="#">PF Return</a></li>
+                            <li> <a href="#">GST Registration</a></li>
+                        </ul>
+                    </li>
+                    <li>Legal Services <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">Online Legal Advice</a></li>
+                            <li><a href="#">Legal Notice</a></li>
+                            <li><a href="#">Divorce</a></li>
+                            <li><a href="#">Other Legal Service</a></li>
+                            <li><a href="#">Doc Collection</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#all">All Services</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+    <!-- Current Page -->
+    <div class="active">
+        <p>You are here: <span>Home ></span> Other License</p>
+    </div>
+    <div class="otherFiling">
+        <h3>Other Filing Compliance</h3>
+        <p>At Corpdhara, we understand the myriad tax and compliance responsibilities facing businesses. From PF and
+            ESI returns to TDS/TCS filing submissions, our Business Return Filing services simplify the
+            process. Let us handle the paperwork and ensure compliance, so you can concentrate on business growth
+            worry-free.</p>
+        <div class="otherSymbols">
+            <img src="assets/otherserviceSymbol.png" alt="">
+        </div>
+        <div class="rightotherservice">
+            <h4>Get Some more Details? Enquiry Now.
+            </h4>
+            <h5>Fill Up the below Mentioned Form
+            </h5>
+            <form onsubmit="sendEmail(); reset(); return false">
+
+                <label for="fname">Applicant Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="Mail" placeholder="Your mail Id" required>
+
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile" name="Mobile" placeholder="Mobile no" required>
+
+                <label for="State">State</label>
+                <select id="state" name="state" required>
+                    <option value="Maharashtra">Maharashtra</option>
+                </select>
+                <label for="Service">Service Type</label>
+                <select id="Service" name="Service" required>
+                    <option value="PF">PF (Provident Fund)</option>
+                    <option value="ESI">ESI (Employee State Insurance) Service</option>
+                    <option value="TDS/TCS">TDS/TCS (Tax Deducted at Source/Tax Collected at Source) Service</option>
+                </select>
+                <input type="submit" value="Submit" required>
+
+            </form>
+        </div>
+        <div class="otherserviceBenifits">
+            <h2>One Stop Solution for PF, ESI, TDS/TCS Services with Corpdhara!</h2>
+            <h3>PF (Provident Fund)</h3>
+            <p>At Corpdhara, our PF (Provident Fund) Service streamlines the management of employee provident fund
+                contributions, ensuring compliance with regulatory requirements. We handle all aspects, from
+                registration and contribution calculations to filing returns, relieving you of administrative burdens
+                and ensuring smooth operations.</p>
+            <h3>ESI (Employee State Insurance) Service</h3>
+            <p>Our ESI (Employee State Insurance) Service ensures that your business complies with ESI
+                regulations effortlessly. We handle registration, contribution calculation, filing returns, and other
+                ESI-related tasks, allowing you to focus on your core business activities with peace of mind.</p>
+            <h3>TDS/TCS (Tax Deducted at Source/Tax Collected at Source) Service</h3>
+            <p> Our TDS/TCS (Tax Deducted at Source/Tax Collected at Source) Service simplifies the
+                complex process of tax compliance. We manage TDS/TCS deduction, calculation, filing, and compliance with
+                regulatory requirements, freeing your time and resources for strategic business initiatives.</p>
+        </div>
+    </div>
+    <!-- How Does -->
+    <div class="work">
+        <div class="work-content">
+            <div class="work-left">
+                <img src="assets/how.jpg" alt="">
+            </div>
+            <div class="work-right">
+                <h3>How does FinTaxLegal Ensure
+                    Customer Satisfaction</h3>
+                <p>CorpDhara FinTaxLegal Solutions LLP 2013 is registered under the Companies Act,
+                    2024, recognised by
+                    the Govt. of India, which is specialized in providing legal help and providing people legal
+                    information just in their hands to easily use it.
+                    <br>
+                    Our core team consists of skilled and proficient qualified Advocates,Company secretaries, Chartered
+                    Accountant (CA) & Cost Accountant along with a diligent team
+                    of other professionals, all under one roof. They provide solution to all the individual,
+                    business
+                    person, corporate body and others to get better help for the issues faced by them in
+                    their everyday life.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Start -->
+    <div class="container footer-container" id="all">
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li>Business Registration
+                        <ul>
+                            <li>Private Limited Company</li>
+                            <li>Limited Liability Company</li>
+                            <li>One Person Company</li>
+                            <li>Nidhi Company </li>
+                            <li>Public Limited Company</li>
+                            <li>LLP Registration</li>
+                            <li>Patnership Firm Registration</li>
+                            <li>Propriorship</li>
+                            <li>NGO Registration</li>
+                            <li>Startup India Registration</li>
+                            <li>RERA Registration</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Licenses
+                        <ul>
+                            <li>FSSAI [Food License]</li>
+                            <li>FSSAI Renewal IEC</li>
+                            <li>[Import/Export Code] IEC</li>
+                            <li>Certificate Modification</li>
+                            <li>Digital Signature Certificate</li>
+                            <li>Copyright</li>
+                            <li>MSME (Udyam)</li>
+                            <li>Shop Act License</li>
+                            <li>ISO Certificates</li>
+                            <li>NITI Aayog License</li>
+                            <li>FCRA License</li>
+                            <li>Labour License</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Registration
+                        <ul>
+                            <li>TM Registration </li>
+                            <li>TM Objection IEC</li>
+                            <li>[Import/Export Code]</li>
+                            <li>TM Renewal </li>
+                            <li>CopyRight Registration</li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>GST
+                        <ul>
+                            <li>GST Registration</li>
+                            <li>GST Filing</li>
+                            <li>GST Modification</li>
+                            <li>GST Cancellation</li>
+                            <li>GST Reconciliation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Accounting & Tax
+                        <ul>
+                            <li>Online Accountant </li>
+                            <li>PF Registration</li>
+                            <li>ESIC Registration</li>
+                            <li>ESIC Return</li>
+                            <li>PF Return</li>
+                            <li>Online Bookkeeping</li>
+                            <li>Income Tax Return</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Legal Services
+                        <ul>
+                            <li>Online Legal Advice </li>
+                            <li> Legal Notice Divorce</li>
+                            <li>Consumer Complaint </li>
+                            <li> Other Legal Services</li>
+                            <li>Doc Collection</li>
+                            <li>Pvt Ltd Complainces</li>
+                            <li>LLP Complainces</li>
+                            <li>Merger Amalgamation</li>
+                            <li>Drafting of Legal opinion</li>
+                            <li>MCA search reports</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <div class="left">
+                <p>Follow us</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100088955109503&mibextid=ZbWKwL"
+                            target="_blank"><img src="assets/fb.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/corpdharafintax?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><img
+                                src="assets/insta.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/corpdhara-fintaxlegal-solutions-101a2325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><img src="assets/visit.png" alt=""></a></li>
+                    <li><a href="https://wa.me/message/KAUK6KUDYNXAJ1" target="_blank"><img src="assets/whatsapp.png"
+                                alt=""></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#co-founder">Attorney</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <p>For any grievance mail to: <a href="complain@fastinfo.com "
+                            style="color: #0472CA;">complain@fastinfo.com</a>
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- CopyRight -->
+    <div class="copyright">
+        <div class="elements">
+            <p>Copyrights - 2024 FinTaxLegal Solution</p>
+            <ul>
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>

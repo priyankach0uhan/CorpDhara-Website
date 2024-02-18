@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./javascript.js">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Priyanka</title>
+</head>
+<style>
+    .foodHeading {
+        margin: 1vw 12vw;
+    }
+
+    .foodHeading .foodHead h3 {
+        font-size: 1.6vw;
+        opacity: 80%;
+        text-align: center;
+        margin: 1.5vw 0vw;
+    }
+
+    .foodHeading .foodTypes .typeFood h4 {
+        margin: 1vw 0vw;
+        text-align: center;
+    }
+
+    .foodTypes h3 {
+        font-size: 1.6vw;
+        opacity: 80%;
+        text-align: center;
+
+    }
+
+    .foodHeading .typeFood p {
+        margin-top: 1vw;
+        text-align: center;
+        margin-bottom: 1vw;
+    }
+
+    .foodTypes {
+        margin: 2vw 0vw;
+    }
+
+    .foodTypes h3 {
+        margin: 1vw 0vw;
+    }
+
+    .foodTypes .typeFood {
+        width: 30%;
+    }
+
+    .benefits h1 {
+        font-size: 1.6vw;
+        opacity: 80%;
+        text-align: center;
+        margin: 1.5vw 0vw;
+    }
+
+    .benefits .Benefit1 h3 {
+        border-radius: 1vw;
+        background-color: #215585;
+        color: #fff;
+        font-size: 1.2vw;
+        padding: 1vw 2.5vw;
+    }
+
+    .Benefit1 p {
+        margin: 1vw 0vw;
+    }
+
+    .Benefit1 p i {
+        font-size: 1.5vw;
+        color: #F06906;
+        padding-right: 0.5vw;
+    }
+
+    .Benefit1 h3 i {
+        font-size: 1.5vw;
+        float: right;
+    }
+
+    .benefits h4 i {
+        font-size: 1vw;
+        opacity: 80%;
+    }
+
+    .benefits h4 i span {
+        color: #F06906;
+        font-weight: 900;
+    }
+
+    .FoodForm .foodform {
+        width: 100%;
+        padding: 1vw;
+        margin: 2vw;
+        box-shadow: 0 0 10px 0.5px #999;
+    }
+
+    .FoodForm .foodform h4 {
+        margin: 1vw;
+        font-size: 1.3vw;
+        opacity: 90%;
+    }
+
+    .FoodForm .foodform h5 {
+        margin: 1vw;
+        font-size: 1vw;
+        font-weight: 300;
+        opacity: 90%;
+    }
+
+    .FoodForm .foodform form {
+        margin: 1vw;
+    }
+
+    .FoodForm .foodform form label {
+        font-size: 0.85vw;
+        font-weight: 550;
+        opacity: 80%;
+    }
+
+    .FoodForm .foodform form p {
+        font-size: 0.9vw;
+        padding: 0.5vw 0vw;
+        opacity: 50%;
+    }
+
+    .FoodForm .foodform form .termsAgree {
+        margin-bottom: 1vw;
+    }
+
+    .FoodForm .foodform form .termsAgree label {
+        font-size: 0.80vw;
+        opacity: 90%;
+        font-weight: 300;
+    }
+
+    @media (max-width:480px) {
+        .foodHeading {
+            margin: 1vw 6vw;
+        }
+
+        .foodHeading .foodHead h3 {
+            font-size: 8vw;
+            opacity: 80%;
+            margin: 5vw 0vw;
+            line-height: 10vw;
+        }
+
+        .foodHeading .foodTypes .typeFood h4 {
+            margin: 1vw 0vw;
+            text-align: center;
+        }
+
+        .foodTypes h3 {
+            font-size: 8vw;
+            opacity: 80%;
+            margin: 5vw 0vw;
+            line-height: 10vw;
+
+        }
+
+        .foodTypes .typeFood h4 {
+            font-size: 5vw;
+            line-height: 8vw;
+            padding: 2vw 0vw;
+        }
+
+        .foodTypes .typeFood p {
+            font-weight: 400;
+            font-size: 4vw;
+            padding: 2vw 0vw;
+            line-height: 7vw;
+        }
+
+        .foodHeading .foodHead p {
+            font-weight: 400;
+            font-size: 4vw;
+            padding: 2vw 0vw;
+            line-height: 7vw;
+        }
+
+
+        .foodTypes .typeFood {
+            width: 100%;
+        }
+
+        .benefits h1 {
+            font-size: 8vw;
+            opacity: 80%;
+            margin: 5vw 0vw;
+            line-height: 10vw;
+        }
+
+        .benefits .Benefit1 h3 {
+            font-size: 6vw;
+            line-height: 8vw;
+            padding: 5vw;
+        }
+
+        .benefits .Benefit1 i {
+            font-size: 5vw;
+        }
+
+        .Benefit1 p {
+            font-weight: 400;
+            font-size: 4vw;
+            padding: 2vw 0vw;
+            line-height: 7vw;
+        }
+
+        .Benefit1 p i {
+            font-size: 5vw;
+            color: #F06906;
+            padding-right: 0.5vw;
+        }
+
+        .Benefit1 h3 i {
+            font-size: 1.5vw;
+            float: right;
+        }
+
+        .benefits h4 i {
+            font-size: 4vw;
+            line-height: 8vw;
+            opacity: 60%;
+        }
+
+        .benefits h4 i span {
+            color: #F06906;
+            font-size: 4vw;
+            line-height: 8vw;
+        }
+
+        .FoodForm .foodform {
+            width: 100%;
+            padding: 5vw;
+            margin: 2vw;
+            box-shadow: 0 0 10px 0.5px #999;
+        }
+
+        .FoodForm .foodform h4 {
+            font-size: 5vw;
+            line-height: 8vw;
+            padding-top: 4vw;
+        }
+
+        .FoodForm .foodform h5 {
+            font-size: 4vw;
+            line-height: 8vw;
+            margin-bottom: 5vw;
+            font-weight: 400;
+        }
+
+        .FoodForm .foodform form {
+            margin: 1vw;
+        }
+
+        .FoodForm .foodform form label {
+            font-size: 4vw;
+            font-weight: 550;
+            opacity: 80%;
+        }
+
+        .FoodForm .foodform form p {
+            font-weight: 400;
+            font-size: 4vw;
+            opacity: 70%;
+            padding: 2vw 0vw;
+            line-height: 7vw;
+        }
+
+        .FoodForm .foodform form .termsAgree {
+            margin-bottom: 1vw;
+        }
+
+        .FoodForm .foodform form .termsAgree label {
+            font-size: 4vw;
+            padding-left: 2vw;
+            opacity: 90%;
+            font-weight: 400;
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        .foodHeading {
+            margin: 1vw 8vw;
+        }
+
+        .foodHeading .foodHead h3 {
+            font-size: 4vw;
+            opacity: 80%;
+            margin: 3vw 0vw;
+            line-height: 5vw;
+        }
+
+        .foodHeading .foodTypes .typeFood h4 {
+            margin: 1vw 0vw;
+            text-align: center;
+        }
+
+        .foodTypes h3 {
+            font-size: 3.5vw;
+            opacity: 80%;
+            margin: 3vw 0vw;
+            line-height: 5vw;
+
+        }
+
+        .foodTypes .typeFood h4 {
+            font-size: 3vw;
+            line-height: 8vw;
+            padding: 2vw 0vw;
+        }
+
+        .foodTypes .typeFood p {
+            font-weight: 400;
+            font-size: 2.5vw;
+            line-height: 5vw;
+        }
+
+        .foodHeading .foodHead p {
+            font-weight: 400;
+            font-size: 2.5vw;
+            padding: 2vw 0vw;
+            line-height: 5vw;
+        }
+
+
+        .foodTypes .typeFood {
+            width: 100%;
+        }
+
+        .benefits h1 {
+            font-size: 4vw;
+            opacity: 80%;
+            margin: 3vw 0vw;
+            line-height: 6vw;
+        }
+
+        .benefits .Benefit1 h3 {
+            font-size: 4vw;
+            line-height: 8vw;
+            padding: 2vw 5vw;
+        }
+
+        .benefits .Benefit1 i {
+            font-size: 3vw;
+        }
+
+        .Benefit1 p {
+            font-weight: 400;
+            font-size: 2.5vw;
+            line-height: 5vw;
+        }
+
+        .Benefit1 p i {
+            font-size: 5vw;
+            color: #F06906;
+            padding-right: 0.5vw;
+        }
+
+        .Benefit1 h3 i {
+            font-size: 1.5vw;
+            float: right;
+        }
+
+        .benefits h4 i {
+            font-size: 3vw;
+            line-height: 5vw;
+            opacity: 60%;
+        }
+
+        .benefits h4 i span {
+            color: #F06906;
+            font-size: 3vw;
+            line-height: 5vw;
+        }
+
+        .FoodForm .foodform {
+            width: 100%;
+            padding: 5vw;
+            margin: 2vw;
+            box-shadow: 0 0 10px 0.5px #999;
+        }
+
+        .FoodForm .foodform h4 {
+            font-size: 3.5vw;
+            opacity: 80%;
+            line-height: 5vw;
+            padding-top: 4vw;
+        }
+
+        .FoodForm .foodform h5 {
+            font-size: 3vw;
+            line-height: 5vw;
+            margin-bottom: 5vw;
+            font-weight: 400;
+        }
+
+        .FoodForm .foodform form {
+            margin: 1vw;
+        }
+
+        .FoodForm .foodform form label {
+            font-size: 3vw;
+            font-weight: 550;
+            opacity: 80%;
+        }
+
+        .FoodForm .foodform form p {
+            font-weight: 400;
+            font-size: 2.5vw;
+            opacity: 70%;
+            padding: 2vw 0vw;
+            line-height: 5vw;
+        }
+
+        .FoodForm .foodform form .termsAgree {
+            margin-bottom: 1vw;
+        }
+
+        .FoodForm .foodform form .termsAgree label {
+            font-size: 2.5vw;
+            padding-left: 2vw;
+            opacity: 90%;
+            font-weight: 400;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        .foodHeading {
+        margin: 1vw 3vw;
+    }
+
+    .foodHeading .foodHead h3 {
+        font-size: 2.5vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+.foodHead p{
+        font-size: 1.7vw;
+        padding: 2vw 0vw;
+        line-height: 3vw;
+}
+    .foodHeading .foodTypes .typeFood h4 {
+        margin: 1vw 0vw;
+        text-align: center;
+        font-size: 1.8vw;
+    }
+
+    .foodTypes h3 {
+        font-size: 2.5vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+
+    }
+
+    .foodHeading .typeFood p {
+        font-weight: 400;
+        font-size: 1.8vw;
+        padding: 2vw 0vw;
+        line-height: 2.5vw;
+    }
+
+    .foodTypes {
+        margin: 2vw 0vw;
+    }
+
+    .foodTypes h3 {
+        margin: 1vw 0vw;
+    }
+
+    .foodTypes .typeFood {
+        width: 30%;
+    }
+
+    .benefits h1 {
+        font-size: 2vw;
+        opacity: 80%;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .benefits .Benefit1 h3 {
+        border-radius: 1vw;
+        background-color: #215585;
+        color: #fff;
+        font-size: 1.5vw;
+        padding: 1.5vw 2.5vw;
+    }
+
+    .Benefit1 p {
+        margin: 1vw 0vw;
+        font-size: 1.7vw;
+        line-height: 2.5vw;
+    }
+
+    .Benefit1 p i {
+        font-size: 1.8vw;
+        color: #F06906;
+        padding-right: 0.5vw;
+    }
+
+    .Benefit1 h3 i {
+        font-size: 2vw;
+        float: right;
+    }
+
+    .benefits h4 i {
+        font-size: 1.5vw;
+        opacity: 80%;
+        line-height: 2.5vw;
+    }
+
+    .benefits h4 i span {
+        color: #F06906;
+        font-weight: 900;
+    }
+
+    .FoodForm .foodform {
+        width: 100%;
+        padding: 1vw;
+        margin: 2vw;
+        box-shadow: 0 0 10px 0.5px #999;
+    }
+
+    .FoodForm .foodform h4 {
+        margin: 1vw;
+        font-size: 1.8vw;
+        opacity: 90%;
+    }
+
+    .FoodForm .foodform h5 {
+        margin: 1vw;
+        margin-bottom: 3vw;
+        font-size: 1.5vw;
+        font-weight: 300;
+        opacity: 90%;
+    }
+
+    .FoodForm .foodform form {
+        margin: 1vw;
+    }
+
+    .FoodForm .foodform form label {
+        font-size: 1.5vw;
+        font-weight: 550;
+        opacity: 80%;
+    }
+
+
+    .FoodForm .foodform form .termsAgree {
+        margin-bottom: 1vw;
+    }
+
+    .FoodForm .foodform form .termsAgree label {
+        font-size: 1.5vw;
+        opacity: 90%;
+        font-weight: 300;
+    }   
+    }
+</style>
+
+<body>
+    <div class="top">
+        <div class="content">
+            <a href="tel:9049397530"><i class="fa fa-fw fa-phone fa-flip-horizontal"></i>+91 9049397530</a>
+            <a href="mailto:corpdhara@gmail.com"><i class="fa fa-fw fa-envelope"></i>
+                corpdhara@gmail.com</a>
+        </div>
+        <div class="right-content">
+            <a href="Contact.html">Join Our Team? <i class="ri-chat-smile-2-fill"></i></a>
+        </div>
+    </div>
+    <header id="myTopnav">
+        <div class=" items">
+            <a href="index.html" class="LOGO"> <img src="assets/CorpDhara.png" alt=""></a>
+            <menu><a href="#all"><i class="ri-more-2-fill" onclick="myFunction()"></i></a></menu>
+            <nav class="navbar">
+
+                <ul>
+
+                    <li>Company Registration <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li> <a href="#">Business Registration</a></li>
+                            <li><a href="#">Private Limited Company</a></li>
+                            <li><a href="#">Limited Liability Partnership</a></li>
+                            <li><a href="#">One Person Company</a></li>
+                            <li><a href="#">Nidhi Company</a></li>
+                            <li><a href="#">Public limited Company</a></li>
+                            <li><a href="#">Section 8 Company</a></li>
+                        </ul>
+                    </li>
+                    <li>Licenses <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">FSSAI [Food License]</a></li>
+                            <li><a href="#">FSSAI Renewal</a></li>
+                            <li><a href="#">IEC [Import/Export Code]</a></li>
+                            <li><a href="#">IEC Certificate Modification</a></li>
+                            <li><a href="#">Digital Signature Certificate</a></li>
+                        </ul>
+
+                    </li>
+                    <li>Trademark & IPR <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">TM Registration</a></li>
+                            <li><a href="#">TM Objection</a></li>
+                            <li><a href="#">TM Renewal</a></li>
+                            <li><a href="#">Copyright Registration</a></li>
+                        </ul>
+                    </li>
+                    <li>Tax & Complainces <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">Online Accountant</a></li>
+                            <li><a href="#">GST Modification</a></li>
+                            <li><a href="#">GST Cancellation</a></li>
+                            <li><a href="#">PF Registration</a></li>
+                            <li><a href="#">PF Return</a></li>
+                            <li><a href="#">Online Bookkeeping</a></li>
+                            <li><a href="#">Income Tax Return</a></li>
+                            <li><a href="#">PF Return</a></li>
+                            <li> <a href="#">GST Registration</a></li>
+                        </ul>
+                    </li>
+                    <li>Legal Services <i class="fa fa-caret-down"></i>
+                        <ul>
+                            <li><a href="#">Online Legal Advice</a></li>
+                            <li><a href="#">Legal Notice</a></li>
+                            <li><a href="#">Divorce</a></li>
+                            <li><a href="#">Other Legal Service</a></li>
+                            <li><a href="#">Doc Collection</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#all">All Services</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Current Page -->
+    <div class="active">
+        <p>You are here: <span>Home ></span> FSSAI Food License</p>
+    </div>
+    <div class="foodHeading">
+        <div class="foodHead">
+            <h3>What is a FSSAI Food License Certificate?
+            </h3>
+            <p> The FSSAI (Food Safety and Standards Authority of India) Food License Certificate is a document issued
+                by
+                the
+                FSSAI to food businesses operating in India. It signifies that the business has complied with the
+                regulations and standards set by the FSSAI regarding food safety and hygiene.</p>
+        </div>
+        <div class="benefits">
+            <h1>What are the Benefits of Obtaining an FSSAI License?
+            </h1>
+            <div class="Benefit1">
+                <h3>Consumer Trust<i class="ri-shield-check-fill"></i>
+                </h3>
+                <p><i class="ri-arrow-right-circle-fill"></i> Having an FSSAI license assures consumers that your food
+                    business complies with safety standards set
+                    by the government, building trust and credibility.</p>
+            </div>
+            <div class="Benefit1">
+                <h3>Legal Compliance <i class="ri-shield-check-fill"></i>
+                </h3>
+                <p><i class="ri-arrow-right-circle-fill"></i> It keeps you on the right side of the law, helping you
+                    avoid fines, penalties, or even closure due to
+                    non-compliance with food safety regulations.
+                </p>
+            </div>
+            <div class="Benefit1">
+                <h3>Market Expansion<i class="ri-shield-check-fill"></i>
+                </h3>
+                <p><i class="ri-arrow-right-circle-fill"></i> With an FSSAI license, you gain access to a wider market
+                    as many distributors, retailers, and even
+                    online platforms require it to sell food products.
+
+                </p>
+            </div>
+            <div class="Benefit1">
+                <h3>Quality Assurance<i class="ri-shield-check-fill"></i>
+                </h3>
+                <p><i class="ri-arrow-right-circle-fill"></i> It ensures that the food you produce meets certain quality
+                    standards, giving your customers
+                    confidence in the safety and integrity of your products.
+
+                </p>
+            </div>
+            <div class="Benefit1">
+                <h3>Business Reputation<i class="ri-shield-check-fill"></i>
+                </h3>
+                <p><i class="ri-arrow-right-circle-fill"></i> Holding an FSSAI license enhances your business
+                    reputation, showing that you prioritize consumer
+                    health and safety, which can attract more customers and partners.
+                </p>
+            </div>
+            <h4>Remember : <i>In essence, having an <span>FSSAI</span> license not only keeps your business legal but
+                    also helps it
+                    thrive by
+                    instilling confidence in consumers and opening up new opportunities in the market.</i></h4>
+        </div>
+
+        <div class="foodTypes">
+            <h3>Types of FSSAI licenses</h3>
+            <div class="row">
+                <div class="typeFood">
+                    <h4>FSSAI Registration</h4>
+                    <p>For small-scale food businesses with an annual turnover below a certain threshold.</p>
+                </div>
+                <div class="typeFood">
+                    <h4>State FSSAI License</h4>
+                    <p>For medium-sized food businesses operating within a single state.</p>
+                </div>
+                <div class="typeFood">
+                    <h4>Central FSSAI License
+                    </h4>
+                    <p>For large-scale food businesses operating in more than one state.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="FoodForm">
+            <div class="foodform">
+                <h4>Need Enquiry?
+                </h4>
+                <h5>Fill Up the below Mentioned Form
+                </h5>
+                <form onsubmit="sendEmail(); reset(); return false">
+
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="Mail" placeholder="Your mail Id" required>
+
+                    <label for="mobile">Mobile No</label>
+                    <input type="text" id="mobile" name="Mobile" placeholder="Mobile no" required>
+
+                    <label for="State">State</label>
+                    <select id="state" name="state" required>
+                        <option value="Maharashtra">Maharashtra</option>
+                    </select>
+
+                    <label for="Licensetype">License/Certificates</label>
+                    <input type="text" id="License/Certificates" name="License/Certificates" placeholder="License Type"
+                        required>
+
+                    <div class="termsAgree">
+                        <input type="checkbox" id="terms" name="Terms">
+                        <label for="vehicle1"> I have read & agreed company's terms & Conditions, and ready to
+                            accept calls, SMS, Emails, etc.</label><br>
+                    </div>
+
+                    <input type="submit" value="Submit" required>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- How Does -->
+    <div class="work">
+        <div class="work-content">
+            <div class="work-left">
+                <img src="assets/how.jpg" alt="">
+            </div>
+            <div class="work-right">
+                <h3>How does FinTaxLegal Ensure
+                    Customer Satisfaction</h3>
+                <p>CorpDhara FinTaxLegal Solutions LLP 2013 is registered under the Companies Act,
+                    2024, recognised by
+                    the Govt. of India, which is specialized in providing legal help and providing people legal
+                    information just in their hands to easily use it.
+                    <br>
+                    Our core team consists of skilled and proficient qualified Advocates,Company secretaries, Chartered
+                    Accountant (CA) & Cost Accountant along with a diligent team
+                    of other professionals, all under one roof. They provide solution to all the individual,
+                    business
+                    person, corporate body and others to get better help for the issues faced by them in
+                    their everyday life.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Start -->
+    <div class="container footer-container" id="all">
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li>Business Registration
+                        <ul>
+                            <li>Private Limited Company</li>
+                            <li>Limited Liability Company</li>
+                            <li>One Person Company</li>
+                            <li>Nidhi Company </li>
+                            <li>Public Limited Company</li>
+                            <li>LLP Registration</li>
+                            <li>Patnership Firm Registration</li>
+                            <li>Propriorship</li>
+                            <li>NGO Registration</li>
+                            <li>Startup India Registration</li>
+                            <li>RERA Registration</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Licenses
+                        <ul>
+                            <li>FSSAI [Food License]</li>
+                            <li>FSSAI Renewal IEC</li>
+                            <li>[Import/Export Code] IEC</li>
+                            <li>Certificate Modification</li>
+                            <li>Digital Signature Certificate</li>
+                            <li>Copyright</li>
+                            <li>MSME (Udyam)</li>
+                            <li>Shop Act License</li>
+                            <li>ISO Certificates</li>
+                            <li>NITI Aayog License</li>
+                            <li>FCRA License</li>
+                            <li>Labour License</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Registration
+                        <ul>
+                            <li>TM Registration </li>
+                            <li>TM Objection IEC</li>
+                            <li>[Import/Export Code]</li>
+                            <li>TM Renewal </li>
+                            <li>CopyRight Registration</li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>GST
+                        <ul>
+                            <li>GST Registration</li>
+                            <li>GST Filing</li>
+                            <li>GST Modification</li>
+                            <li>GST Cancellation</li>
+                            <li>GST Reconciliation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Accounting & Tax
+                        <ul>
+                            <li>Online Accountant </li>
+                            <li>PF Registration</li>
+                            <li>ESIC Registration</li>
+                            <li>ESIC Return</li>
+                            <li>PF Return</li>
+                            <li>Online Bookkeeping</li>
+                            <li>Income Tax Return</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li>Legal Services
+                        <ul>
+                            <li>Online Legal Advice </li>
+                            <li> Legal Notice Divorce</li>
+                            <li>Consumer Complaint </li>
+                            <li> Other Legal Services</li>
+                            <li>Doc Collection</li>
+                            <li>Pvt Ltd Complainces</li>
+                            <li>LLP Complainces</li>
+                            <li>Merger Amalgamation</li>
+                            <li>Drafting of Legal opinion</li>
+                            <li>MCA search reports</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <div class="left">
+                <p>Follow us</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100088955109503&mibextid=ZbWKwL"
+                            target="_blank"><img src="assets/fb.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/corpdharafintax?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><img
+                                src="assets/insta.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/corpdhara-fintaxlegal-solutions-101a2325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><img src="assets/visit.png" alt=""></a></li>
+                    <li><a href="https://wa.me/message/KAUK6KUDYNXAJ1" target="_blank"><img src="assets/whatsapp.png"
+                                alt=""></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#co-founder">Attorney</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <p>For any grievance mail to: <a href="complain@fastinfo.com "
+                            style="color: #0472CA;">complain@fastinfo.com</a>
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- CopyRight -->
+    <div class="copyright">
+        <div class="elements">
+            <p>Copyrights - 2024 FinTaxLegal Solution</p>
+            <ul>
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>
